@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "node build.mjs",
+  "installCommand": "echo No dependencies required",
+  "outputDirectory": "dist",
+  "redirects": [
+    {"source":"/admin/:path*","destination":"https://yoga-permana-portfolio.yyogapermana68.chatgpt.site/admin/:path*","permanent":false},
+    {"source":"/signin-with-chatgpt","destination":"https://yoga-permana-portfolio.yyogapermana68.chatgpt.site/admin","permanent":false}
+  ],
+  "rewrites": [
+    {"source":"/:path*","destination":"https://yoga-permana-portfolio.yyogapermana68.chatgpt.site/:path*"}
+  ]
+}
